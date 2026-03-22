@@ -1,0 +1,135 @@
+### 🔹 **Basic “if-else” Statement Questions**
+
+
+1. **Positive or Negative Number**
+   Write a python program to check whether a number is positive or negative.
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n>0):
+    print("It is a positive number ");
+else:
+    print("It is a negative number ");
+
+
+
+2. **Even or Odd Number**
+   Write a python program to check whether a number is even or odd.
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n%2==0):
+    print("It is a even number ");
+else:
+    print("It is a odd number ");
+
+
+3. **Pass or Fail**
+   Write a python program to check if a student has passed or failed.
+   *(Pass if marks ≥ 40, otherwise Fail)*
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n>=40):
+    print("pass");
+else:
+    print("fail");
+
+
+
+4. **Voting Eligibility**
+   Write a python program to check if a person is eligible to vote or not.
+   *(Eligible if age ≥ 18)*
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n>=18):
+    print("Eligible for vote ");
+else:
+    print("Not eligible for vote");
+
+
+5. **Greatest of Two Numbers**
+   Write a python program to find which number is greater between two numbers.
+
+answer :
+
+
+
+
+
+6. **Check Divisibility by 5**
+   Write a python program to check if a number is divisible by 5 or not.
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n%5==0):
+    print("It divisible by 5");
+else:
+    print("It is not divisible by 5 ");
+
+
+7. **Character Case Check**
+   Write a python program to check whether a character is uppercase or lowercase.
+
+answer :
+
+n=str(input("Enter the character : "));
+if(n>'A' and n<'Z'):
+    print("It is upar case ");
+else:
+    print("It is lower case ");
+
+
+8. **Leap Year Check (Simple)**
+   Write a python program to check whether a year is a leap year or not (divisible by 4).
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n%4==0):
+    print("It is a leap year ");
+else:
+    print("It is not a leap year ");
+
+
+9. **Number Sign Check**
+   Write a python program to check whether a number is positive,negative and  zero.
+
+answer :
+n=int(input("Enter the number :"));
+if(n>0):
+    print("It is a positive number ");
+elif(n<0):
+    print("It is a negative number ");
+else:
+    print("It is a zero number ");
+
+
+10. **Eligible for Discount**
+    Write a python program to check if a customer gets a discount.
+    *(If purchase amount ≥ 1000 → “Discount available”, else “No discount”)*
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n>=1000):
+    print("discount available ");
+else:
+    print("No discount ");
+
+
+
+
+
+
+
+
+
+
+

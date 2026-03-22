@@ -1,0 +1,109 @@
+### 🔹 **Basic “if” Statement Questions**
+
+1. **Positive Number Checker**
+   Write a python program to check if a number is positive.
+
+answer : 
+
+
+n=int(input("Enter the number : "));
+if n>0:
+    print("It is a positive number ");
+
+
+
+2. **Even Number Checker**
+   Write a python program to check if a number is even using only an `if` statement.
+
+answer : 
+
+
+n=int(input("Enter the numbe : "));
+if n%2==0:
+    print("It is a even number ");
+
+
+3. **Voting Eligibility**
+   Write a python program to check if a person is eligible to vote (age ≥ 18).
+
+answer : 
+
+n=int(input("Enter the number : "));
+if n>=18:
+    print("Voting Eligibility");
+
+
+4. **Check for Pass**
+   Write a python  program to check if a student has passed the exam (marks ≥ 40).
+
+answer : 
+
+
+n=int(input("Enter the number : "));
+if n>=40:
+    print("Pass");
+
+
+5. **Divisibility Check**
+   Write a  python  program to check if a number is divisible by 5.
+answer : 
+
+n=int(input("Enter the number : "));
+if(n%5==0):
+    print("It is divisible by 5 ");
+
+
+
+
+6. **Check for Uppercase Character**
+   Write a python program to check if a character entered by the user is an uppercase letter (A–Z).
+
+answer : 
+
+n=str(input("Enter the number : "));
+if(n>='A' and n<='Z'):
+    print("It is a upar case letter ");
+
+
+
+7. **Check for Multiple of 10**
+   Write a python program to check if a number is a multiple of 10.
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n%10==0):
+    print("It is divisible by 10 ");
+
+
+8. **Check for Leap Year (simple)**
+   Write a python program to check if a year is divisible by 4 (basic leap year logic using one `if`).
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n%4==0):
+        print("It is a leap year ");
+
+
+9. **Check for Odd Number**
+   Write a python  program to print “Odd number” if the number is not divisible by 2.
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n%2!=0):
+    print("It is a odd number ");
+
+
+10. **Check for Discount Eligibility**
+    Write a python program to check if the purchase amount is more than ₹1000 and print “Discount available”.
+
+answer : 
+
+n=int(input("Etner the number : "));
+if(n>1000):
+    print("Discount available ");
+
+
+

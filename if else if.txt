@@ -1,0 +1,164 @@
+if else if
+Here are some **basic questions on `if...else if...else`** in python — perfect for beginners 👇
+
+---
+
+### 🔹 **Basic Level Questions**
+
+1. **Number Comparison:**
+   Write a program that takes two numbers as input and prints which number is greater or if they are equal.
+
+answer : 
+
+n=int(input("Enter the number : "));
+a=int(input("Enter the number : "));
+if(n>a):
+    print(n);
+elif(n<a):
+    print(a);
+elif(n==a):
+    print("equal");
+
+
+2. **Grade Calculator:**
+   Write a program that takes a student's marks as input and prints the grade based on these conditions:
+
+   * 90–100 → A
+   * 80–89 → B
+   * 70–79 → C
+   * 60–69 → D
+   * Below 60 → F
+
+answer : 
+
+marks=int(input("Enter the number : "));
+if(marks>=90 and marks<=100):
+    print("A");
+elif(marks>=80 and marks<=89):
+    print("B");
+elif(marks>=70 and marks<=79):
+    print("C");
+elif(marks>=60 and marks<=79):
+    print("D");
+else:
+    print("Fail");
+
+
+3. **Positive, Negative, or Zero:**
+   Write a program to check whether a number is positive, negative, or zero.
+
+answer : 
+
+number=int(input("Entert the number : "));
+if(number>0):
+    print("It is a positive number ");
+elif(number<0):
+    print("It is a negative number ");
+else:
+    print("It is a zero");
+
+
+4. **Largest of Three Numbers:**
+   Write a program to find the largest of three numbers using `if...else if...else`.
+
+answer : 
+
+n=int(input("Enter the firt number : "));
+x=int(input("Enter the second number : "));
+y=int(input("Enter the third number : "));
+
+if(n>x and n>y):
+    print("It is greater then both ",n);
+elif(x>n and x>y):
+    print("It is greator then both ",x);
+elif(y>n and y>x):
+    print("It is greator then both ",y);
+
+5. **Temperature Message:**
+   Write a program that prints messages based on temperature:
+
+   * Above 30 → “It’s hot!”
+   * Between 20 and 30 → “It’s warm.”
+   * Below 20 → “It’s cold.”
+
+answer : 
+
+t=int(input("Enter the number : "));
+if(t>30):
+    print("It is hot ");
+elif(t>20 and t<30):
+    print("It is warm");
+elif(t<20):
+    print("It is cold");
+    
+
+6. **Day of the Week:**
+   Write a program that takes a number (1–7) as input and prints the corresponding day of the week.
+
+answer : 
+
+n=int(input("Entert the number : "));
+if(n==1):
+    print("Monday");
+elif(n==2):
+    print("Tuesday");
+elif(n==3):
+    print("Wedensday");
+elif(n==4):
+    print("thursday");
+elif(n==5):
+    print("Friday");
+elif(n==6):
+    print("saturday");
+elif(n==7):
+    print("sunday");
+else:
+    print("choice valid number ");
+
+
+7. **Electricity Bill Calculation:**
+   Write a program that calculates the electricity bill using these rules:
+
+   * For units ≤ 100 → ₹1 per unit
+   * For 101–200 → ₹2 per unit
+   * Above 200 → ₹3 per unit
+
+amswer : 
+
+n=int(input("Enter the number : "));
+if(n<=100):
+    print("1rup per unit");
+elif(n>=101 and n<=200):
+    print("2rup per unit");
+elif(n>200):
+    print("3rup per unit");
+
+
+8. **BMI Category:**
+   Write a program to input BMI value and print:
+
+   * BMI < 18.5 → Underweight
+   * 18.5 ≤ BMI < 25 → Normal
+   * 25 ≤ BMI < 30 → Overweight
+   * BMI ≥ 30 → Obese
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n<18.5):
+    print("Under weight");
+elif(n>=18.5 and n<25):
+    print("normal");
+elif(n>=25 and n<=30):
+    print("Over weight");
+elif(n>30):
+    print("obese");
+
+
+
+
+
+
+
+
+
