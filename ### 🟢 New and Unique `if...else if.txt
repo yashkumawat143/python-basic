@@ -1,0 +1,329 @@
+### 🟢 **New and Unique `if...else if...else` Questions**
+
+1. **Leap Year with Century Check:**
+   Write a program to check whether a year is a leap year and also print whether it’s a century year or not.
+
+answer : 
+ 
+n=int(input("Enter the year : "));
+if(n%400==0):
+    print("It is a leap year and century year ");
+
+elif(n%100==0):
+    print("it is a century year");
+elif(n%4==0):
+    print("It is a leap year ");    
+else:
+    print("It is not a leap year");
+
+
+2. **Number Range Identifier:**
+   Input a number and print:
+
+   * Less than 0 → Negative
+   * 0–10 → Small number
+   * 11–100 → Medium number
+   * Above 100 → Large number
+
+answer :                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+n=int(input("Enter the number : "));
+if(n<0):
+    print("Negative");
+elif(n>0 and n<=10):
+    print("Small number");
+elif(n>11 and n<=100):
+    print("Medium number");
+else:
+    print("Large number");
+
+
+
+3. **Password Strength Checker:**
+   Input the length of a password (number).
+
+   * Less than 6 → “Weak”
+   * 6–10 → “Medium”
+   * Greater than 10 → “Strong”
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n<6):
+    print("Weak");
+elif(n>=6 and n<=10):
+    print("Medium");
+else:
+    print("strong");
+
+
+
+4. **Exam Grading with Bonus Marks:**
+   Input marks and attendance percentage.
+
+   * If attendance > 90 → Add 5 bonus marks before grading.
+     Then print grade using standard scale (A, B, C, etc.).
+
+answer :
+
+marks=int(input("Enter the marks : "));
+attendance=int(input("Enter the attendace : "));
+if(attendance>90):
+    marks+=5;
+
+if(marks>90):
+    print(marks);
+    print("A");
+elif(maks>=80 and mark<=90):
+    print(marks);
+    print("B");
+elif(marks>=70 and marks<=79):
+    print(marks);
+    print("C");
+elif(marks>=50 and marks<=69):
+    print(marks);
+    print("D");
+else:
+    print("Fail");
+    
+
+5. **Blood Donation Eligibility:**
+   Input age and weight.
+
+   * If age < 18 → “Not eligible (underage)”
+   * Else if weight < 50 → “Not eligible (underweight)”
+   * Else → “Eligible to donate blood.”
+
+answer : 
+
+age=int(input("Enter the age : "));
+weight=int(input("Enter the weight : "));
+if(age<18):
+    print("Not eligible (underage)");
+elif(weight<50):
+    print("Not eligible (underweight)");
+else:
+    print("Eligible to donate blood ");
+
+
+
+6. **Internet Speed Checker:**
+   Input internet speed (in Mbps).
+
+   * < 5 → “Slow”
+   * 5–20 → “Average”
+   * 21–100 → “Fast”
+   * > 100 → “Very Fast”
+answer : 
+
+n=int(input("Enter the speed of internet : "));
+if(n<5):
+    print("Slow");
+elif(n>5 and n<20):
+    print("Average");
+elif(n>21 and n<100):
+    print("Fast");
+else:
+    print("Very fast");
+
+
+
+7. **Water Level Monitor:**
+   Input tank water level (in %).
+
+   * < 25 → “Refill immediately!”
+   * 25–60 → “Half full.”
+   * 61–90 → “Almost full.”
+   * > 90 → “Tank full — stop supply.”
+
+answer : 
+
+n=int(input("Enter the percentage of water level : "));
+if(n<25):
+    print("Refill immediately");
+elif(n>25 and n<60):
+    print("Half full");
+elif(n>61 and n<90):
+    print("Almost full");
+else:
+    print("Tank full");
+
+8. **BMI Health Suggestion:**
+   Input BMI and print health suggestion:
+
+   * < 18.5 → “Eat more nutritious food.”
+   * 18.5–24.9 → “You’re fit!”
+   * 25–29.9 → “Exercise regularly.”
+   * ≥ 30 → “Consult a doctor.”
+
+answer : 
+
+n=float(input("Enter the BMI : "));
+if(n<18.5):
+    print("Eat more nutritious food ");
+elif(n>=18.5 and n<=24.9):
+    print("You are fit ! ");
+elif(n>=25 and n<=29.9):
+    print("Exercise regulalry");
+else:
+    print("Consult a doctor ");
+    
+
+9. **Electric Fan Speed Controller:**
+   Input temperature:
+
+   * < 20°C → “Fan off.”
+   * 20–30°C → “Fan speed: Low.”
+   * 31–40°C → “Fan speed: Medium.”
+   * > 40°C → “Fan speed: High.”
+
+answer : 
+
+n=int(input("Enter the temperature : "));
+if(n<20):
+    print("Fan off");
+elif(n>20 and n<30):
+    print("Fan speed : slow");
+elif(n>31 and n<40):
+    print("Fan speed : medium");
+else:
+    print("Fan speed : high");
+
+
+10. **Mobile Recharge Plan Selector:**
+    Input amount and print plan:
+
+    * 99 → 28 days / 1.5GB per day
+    * 199 → 56 days / 2GB per day
+    * 299 → 84 days / 2.5GB per day
+    * Others → “Invalid plan.”
+
+amswer : 
+
+n=int(input("Enter the amount : "))
+if(n==99):
+    print("28 days / 1.5GB per day ");
+elif(n==199):
+    print("56 days / 2GB per day");
+elif(n==299):
+    print("84 days / 2.5GB per day");
+else:
+    print("Invalid plan");
+
+
+11. **Movie Ticket Offer:**
+    Input day and number of tickets.
+
+    * If day = Wednesday → 10% discount
+    * If more than 4 tickets → 15% discount
+    * Else → No discount
+
+answer : 
+
+12. **Car Speed Warning System:**
+    Input car speed:
+
+    * < 40 → “Too slow”
+    * 40–80 → “Normal speed”
+    * 81–120 → “Drive carefully”
+    * > 120 → “Over speeding! Fine imposed.”
+answer : 
+
+
+n=int(input("Enter the number : "));
+if(n<40):
+    print("Too slow ");
+elif(n>40 and n<80):
+    print("Normal speed");
+elif(n>81 and n<120):
+    print("Drive carefully");
+else:
+    print("Over speeding !");
+
+
+
+13. **Mobile Battery Status:**
+    Input battery percentage:
+
+    * 0–20 → “Low Battery”
+    * 21–60 → “Medium Battery”
+    * 61–90 → “High Battery”
+    * 91–100 → “Full Battery”
+answer :
+
+n=int(input("Enter the battery percentage : "));
+if(n>=0 and n<=20):
+    print("Low battery");
+elif(n>=21 and n<=60):
+    print("Medium battery");
+elif(n>=61 and n<=90):
+    print("High battery");
+elif(n>91 and n<100):
+    print("Full battery");
+    
+
+
+
+14. **Library Fine Calculator:**
+    Input number of days late.
+
+    * 1–5 → ₹2 per day
+    * 6–10 → ₹5 per day
+    * > 10 → ₹10 per day
+    * If >30 → “Membership cancelled”
+answer : 
+
+n=int(input("Enter the days : "));
+if(n>30):
+    print("Membership cancelled");
+    
+elif(n>=1 and n<=5):
+    fine=n*2;
+    print("fine =",fine);
+elif(n>=6 and n<=10):
+    fine=n*2;
+    print("Fine =",fine);
+elif(n>=10):
+    fine=n*2;
+    print("Fine =",fine);
+    
+    
+    
+15. **Coffee Machine Choice:**
+    Input number for coffee type:
+
+    * 1 → Espresso
+    * 2 → Latte
+    * 3 → Cappuccino
+    * 4 → Mocha
+    * Otherwise → “Invalid choice”
+answer :
+
+
+print("choice the number for type ");
+
+print("1.Espresso");
+print("2.Latte");
+print("3.Cappuccino");
+print("4.macha");
+print("5.Invalid choice");
+
+n=int(input("Enter the coffie type : "));
+
+if(n==1):
+    print("Espresso");
+elif(n==2):
+    print("Latte");
+elif(n==3):
+    print("Cappuccino");
+elif(n==4):
+    print("Macha");
+else:
+    print("Invalid choice");
+
+
+
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
