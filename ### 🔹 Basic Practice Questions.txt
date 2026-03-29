@@ -1,0 +1,216 @@
+### 🔹 **Basic Practice Questions**
+
+1. **Check Character Type:**
+   Write a program to check whether a character is a vowel, consonant, digit, or special character.
+
+answer : 
+n=(input("Enter the number : "));
+if(n=='a' or n=='e' or n=='i' or n=='o' or n=='u'):
+    print("vowel");
+elif(n>='a' and n<='z'):
+    print("consonants");
+elif(n>='0' and n<='9'):
+    print("digit");
+else:
+    print("special character ");
+
+
+2. **Even or Odd + Range Check:**
+   Take a number as input.
+
+   * If even and between 1–50 → print “Even in range.”
+   * If even and above 50 → print “Even above range.”
+   * If odd → print “Odd number.”
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n%2==0 and n>=1 and n<=50):
+    print("even number in range");
+elif(n%2==0 and n>50):
+    print("even above range");
+elif(n%2!=0):
+    print("odd number ");
+
+
+3. **Simple Calculator:**
+   Write a program that takes two numbers and an operator (`+`, `-`, `\\\\\\\*`, `/`) and performs the correct operation.
+
+answer : 
+
+a=float(input("Enter the first number : "));
+b=float(input("Enter the second number : "));
+n=input("Enter the operator : ");
+
+if(n=='+'):
+    print(a+b);
+elif(n=='-'):
+    print(a-b);
+elif(n=='*'):
+    print(a*b);
+elif(n=='/'):
+    print(a/b);
+        
+
+4. **Traffic Light System:**
+   Input a color (Red, Yellow, Green).
+
+   * Red → “Stop”
+   * Yellow → “Ready”
+   * Green → “Go”
+   * Otherwise → “Invalid color”
+
+answer :
+
+n=(input("Enter : "));
+if(n=='red'):
+    print("stop");
+elif(n=='yellow'):
+    print("ready");
+elif(n=='green'):
+    print("go");
+else:
+    print("inavlid color");
+
+
+5. **Marks Classification:**
+   Input student marks and display:
+
+   * 85–100 → Excellent
+   * 70–84 → Very Good
+   * 55–69 → Good
+   * 40–54 → Pass
+   * Below 40 → Fail
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n>=85 and n<=100):
+    print("excellent");
+elif(n>=70 and n<=84):
+    print("very good");
+elif(n>=55 and n<=69):
+    print("good");
+elif(n>=40 and n<=54):
+    print("pass");
+else:
+    print("fail");
+
+
+6. **Age Category:**
+   Input age and print category:
+
+   * Below 13 → Child
+   * 13–19 → Teenager
+   * 20–59 → Adult
+   * 60 and above → Senior Citizen
+
+
+answer : 
+
+n=int(input("Enter the age : "));
+if(n<=13):
+    print("child");
+elif(n>13 and n<=19):
+    print("teenager");
+elif(n>=20 and n<=59):
+    print("adult");
+else:
+    print("senior citizen");
+
+
+
+7. **Discount Calculation:**
+   Input total purchase amount:
+
+   * Below 1000 → No discount
+   * 1000–5000 → 10% discount
+   * Above 5000 → 20% discount
+
+answer : 
+n=int(input("Enter the number : "));
+if(n<1000):
+    print("no discount");
+elif(n>=1000 and n<5000):
+    print("10 % discount");
+elif(n>=5000):
+    print("20 % dicount");
+
+
+8. **Month Days Finder:**
+   Input month number (1–12) and print how many days are in that month.
+
+answer : 
+
+
+n=int(input("Enter the number : "));
+if(n==1):
+    print("january 31 days");
+elif(n==2):
+    print("february 28 or 29 days");
+elif(n==3):
+    print("march 31 days");
+elif(n==4):
+    print("april 30 days");
+elif(n==5):
+    print("may 31 days");
+elif(n==6):
+    print("june 30 days");
+elif(n==7):
+    print("july 31 days");
+elif(n==8):
+    print("august 31 days");
+elif(n==9):
+    print("september 30 days");
+elif(n==10):
+    print("october 31 days");
+elif(n==11):
+    print("november 30 days");
+elif(n==12):
+    print("december 31 days");
+else:
+    print("Enter valid number ");
+    
+
+9. **Exam Result:**
+   Input marks in three subjects.
+
+   * If all subjects ≥ 40 → “Pass”
+   * If one subject < 40 → “Supplementary”
+   * If two or more < 40 → “Fail”
+
+answer : 
+
+subject1=int(input("Enter the marks : "));
+subject2=int(input("Enter the marks : "));
+subject3=int(input("Enter the marks : "));
+count=0;
+if(subject1<40):
+    count+=1
+if(subject2<40):
+    count+=1
+if(subject3<40):
+    count+=1
+if(count==0):
+    print("pass");
+elif(count==1):
+    print("supplementory");
+else:
+    print("fail");
+
+
+10. **Letter Case Check:**
+    Input a character and check if it’s uppercase, lowercase, or not an alphabet.
+
+answer : 
+
+n=(input("Enter the letter : "));
+if(n>='a' and n<='z'):
+    print("lower case letter ");
+elif(n>='A' and n<='Z'):
+    print("upar case letter ");
+else:
+    print("other");
+
+
+

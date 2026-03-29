@@ -1,0 +1,129 @@
+nested if
+Here are some **basic questions of nested if (only)** in python 👇
+
+### 🧩 **Basic Nested If Questions**
+
+1. **Check the largest of three numbers**
+   Write a python program to find the largest among three numbers using nested if statements.
+
+answer :
+
+n=int(input("Enter the zero : "));
+if(n==0):
+    a=int(input("Enter the first number : "));
+    b=int(input("Enter the second number : "));
+    c=int(input("Enter the third number : "));
+    if(a>b and a>c):
+        print("Largest number : ",a);
+    elif(b>a and b>c):
+        print("Largest number : ",b);
+    elif(c>a and c>b):
+        print("Largest number : ",c);
+        
+
+---
+
+2. **Check if a number is positive, negative, or zero**
+   Use nested if to determine whether a number is positive, negative, or zero.
+
+answer : 
+
+n=int(input("Enter the zero : "));
+if(n==0):
+    a=int(input("Enter the number : "));
+    if(a>0):
+        print("Positive");
+    elif(a<0):
+        print("Negative");
+    else:
+        print("Zero");
+    
+
+---
+
+3. **Check if a number is even or odd, and also check if it’s divisible by 5**
+   Example: If even → check if divisible by 5, else print “odd number”.
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n%2==0):
+    print("It is a even number ");
+    
+    if(n%5==0):
+        print("It is divisible by 5");
+        print(n);
+    else:
+        print("It is not divisible by 5");
+else:
+    print("It is a odd number ");
+
+---
+
+4. **Check whether a person is eligible to vote and also check if they are senior citizens**
+   (age ≥ 18 → eligible, then check if age ≥ 60 → senior citizen)
+
+answer :
+
+n=int(input("Enter the age : "));
+if(n>=18):
+    print("Eligible for vote");
+    if(n>=60):
+        print("Senior citizen");
+    else:
+        print("Not a senior citizen");
+else:
+    print("Not eligible for vote");
+
+
+
+6. **Check if a student passed**
+   If marks ≥ 40 → “Pass”, and if marks ≥ 75 → “Passed with Distinction”.
+answer : 
+
+n=int(input("Enter the marks : "));
+if(n>=40):
+    print("Pass");
+    if(n>=75):
+        print("Passed with distinction");
+else:
+    print("Fall");
+    
+
+---
+
+7. **Check if a character is an alphabet, then check if it is vowel or consonant**
+   First check if it’s between 'A'-'Z' or 'a'-'z', then check for vowels.
+
+answer :
+
+n=input("Enter the Elphabet : ");
+if(n>='a' and n<='z' or n>='A' and n<='Z'):
+    if(n=='a' or n=='e' or n=='i' or n=='o' or n=='u' or n=='A' or n=='E' or n=='I' or n=='O' or n=='U'):
+        print("It is a vowel");
+    else:
+        print("It is a consonent");
+else:
+    print("It is not a elphabet ");
+
+---
+
+8. **Check if a person can apply for a driving license**
+   If age ≥ 18 → check if they have a learning license → eligible.
+
+answer : 
+
+n=int(input("Enter the age : "));
+if(n>=18):
+    print("It is aligible for license");
+    a=input("you have learning license ? = ");
+    if(a=='y' or a=='Y'):
+        print("You have learning license");
+    else:
+        print("You have no learning license");
+else:
+    print("You are not eligible for license");
+
+
+
+

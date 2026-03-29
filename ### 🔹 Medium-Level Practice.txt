@@ -1,0 +1,120 @@
+### 🔹 **Medium-Level Practice**
+
+11. **Menu-Driven Food Program:**
+    Input choice number:
+
+    * 1 → Pizza
+    * 2 → Burger
+    * 3 → Pasta
+    * Otherwise → Invalid choice
+
+answer :
+
+n=int(input("Enter the number : "));
+if(n==1):
+    print("pizza");
+elif(n==2):
+    print("burger");
+elif(n==3):
+    print("pasta");
+else:
+    print("Invalid choice");
+
+
+12. **Income Tax Calculator:**
+    Input income amount:
+
+    * Up to ₹2.5 lakh → No tax
+    * ₹2.5–5 lakh → 5%
+    * ₹5–10 lakh → 20%
+    * Above ₹10 lakh → 30%
+
+answer : 
+
+n=float(input("Enter the money : "));
+if(n<2.5):
+    print("no tax");
+elif(n>=2.5 and n<=5):
+    print("5% tax");
+elif(n>5 and n<=10):
+    print("20% tax");
+else:
+    ("30% tax");
+
+
+
+13. **Triangle Type Checker:**
+    Input three sides and print:
+
+    * All sides equal → Equilateral
+    * Two sides equal → Isosceles
+    * All sides different → Scalene
+
+answer :
+
+a=int(input("Enter the number : "));
+b=int(input("Enter the number : "));
+c=int(input("Enter the number : "));
+if(a+b>c and a+c>b and b+c>a):
+    if(a==b==c):
+        print("Equilaterial");
+    elif(a==b or b==c or a==c):
+        print("Isosceles");
+    else:
+        print("Scalene");
+
+
+
+ 14. **Grade with Remarks:**
+    Input marks and show both grade and remark:
+
+    * A → Excellent
+    * B → Good
+    * C → Average
+    * D → Poor
+    * F → Fail
+
+answer : 
+
+marks=int(input("Enter the marks : "));
+if(marks>=90):
+    print("A");
+    print("Excellent");
+elif(marks>=80 and marks<=89):
+    print("B");
+    print("Good");
+elif(marks>=70 and marks<=79):
+    print("C");
+    print("Average");
+elif(marks>=40 and marks<=69):
+    print("D");
+    print("Poor");
+else:
+    print("Fail");
+
+
+15. **Login System Simulation:**
+    Input username and password.
+
+    * If both match stored values → “Login successful”
+    * If username correct but password wrong → “Incorrect password”
+    * Otherwise → “Invalid username”
+
+amswer : 
+
+
+name1="yash";
+password1="12345";
+
+
+name=(input("Enter the name : "));
+password=str(input("Enter the password : "));
+if(name==name1 and password==password1):
+    print("Login successful");
+elif(name==name1 or password==password1):
+    print("Incorrect password");
+else:
+    print("Invalid username");
+
+
+
