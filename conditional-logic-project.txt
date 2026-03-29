@@ -1,0 +1,226 @@
+Q... nested if
+Here are some **basic questions of nested if (only)** in C 👇
+---
+
+write a c program input character 'a' :
+ 	//nested if
+ 	enter number : check number is greater than 60 ----> yes
+ 	not
+---
+write a c program input character 'e' :
+ 	//nested if
+ 	enter number : check number is even ----> yes
+ 	not
+---
+write a c program input character 'm' :
+ 	//nested if
+ 	enter number three subject marks: subject>40 all subject ----> pass
+ 	fail
+ 
+---
+write a c program input character 'a' :
+ 	//single
+ 	a =apple
+ 	b =ball
+ 	c=cat
+ 	d=dog
+ 	not matched
+---
+write a c program input character 'c':
+ 	again input character
+ 	check vowel and consonat
+---
+write a c program input character :
+outer if :'a'
+ 	//alphabet code : (f,h,j,k)
+ 	f :fish
+ 	h :home
+ 	j : jaipur
+ 	k : kite
+ 	not
+
+ :
+ 	two number input
+ 	symbol + , - , * , / , %
+ 	addition
+
+ :
+ 	marksheet question grade
+
+ :
+ 	light system traffic
+
+ :
+ 	Day of the Week 1 :sunday
+
+ :
+ 	Temperature Message
+ 	➤ Write a program that takes temperature as input and prints:
+
+ 	“Very Cold” if < 10
+
+ 	“Cold” if 10–20
+
+ 	“Normal” if 21–30
+
+ 	“Hot” if 31–40
+
+ 	“Very Hot” if > 40
+e :
+ 	Electricity Bill
+
+ 	Write a program to calculate electricity charges:
+
+ 	Units ≤ 100 → ₹2 per unit
+
+ 	101–200 → ₹3 per unit
+
+ 	201–300 → ₹4 per unit
+
+ 	Above 300 → ₹5 per unit
+
+
+
+
+
+
+answer : 
+
+
+
+n=(input("Enter the character : "));
+if(n=='b'):
+    i=int(input("Enter the number : "));
+    if(i>=60):
+        print("Yes");
+    else:
+        print("No");
+elif(n=='e'):
+    j=int(input("Enter the number : "));
+    if(j%2==0):
+        print("Even number");
+    else:
+        print("Odd number ");
+   
+elif(n=='m'):
+    e=int(input("Enter the english marks : "));
+    b=int(input("Enter the bee marks : "));
+    m=int(input("Enter the maths marks : "));
+    if(e>40 and b>40 and m>40):
+        print("Pass");
+    else:
+        print("Fail");
+elif(n=='a'):
+    a=input("Enter the character : ");
+    if(a=='a'):
+        print("apple");
+    elif(a=='b'):
+        print("ball");
+    elif(a=='c'):
+        print("cat");
+    elif(a=='d'):
+        print("dog");
+    else:
+        print("Not matched");
+elif(n=='c'):
+    a=input("Enter the charcter : ");
+    if(a=='a' or a=='e' or a=='o' or a=='i' or a=='u' or a=='A' or a=='E' or a=='I' or a=='O' or a=='U'):
+        print("Vowel");
+    else:
+        print("Consonat");
+elif(n=='d'):
+    a=input("Enter the charcter : ");
+    if(a=='f'):
+        print("Fish");
+    elif(a=='h'):
+        print("home");
+    elif(a=='j'):
+        print("Jaipur");
+    elif(a=='k'):
+        print("Kite");
+    else:
+        print("Not");
+elif(n=='g'):
+    a=input("Enter the sign : ");
+    a1=int(input("Enter the number : "));
+    a2=int(input("Enter the number : "));
+    if(a=='+'):
+        print(a1+a2);
+    elif(a=='-'):
+        print(a1-a2);
+    elif(a=='*'):
+        print(a1*a2);
+    elif(a=='/'):
+        print(a1/a2);
+    elif(a=='%'):
+        print(a1%a2);
+elif(n=='h'):
+    marks=int(input("Enter the marks : "));
+    if(marks>=90):
+        print("A");
+    elif(marks>=80):
+        print("B");
+    elif(marks>=60):
+        print("c");
+    
+elif(n=='j'):
+    color=input("Enter the traffic colour : ");
+    if(color=='red'):
+        print("Stop");
+    elif(color=='yellow'):
+        print("ready");
+    elif(color=='green'):
+        print("Go");
+elif(n=='k'):
+    week=int(input("Enter the number : "));
+    if(week==1):
+        print("Monday");
+    elif(week==2):
+        print("Tuesday");
+    elif(week==3):
+        print("Wednesday");
+    elif(week==4):
+        print("thursday");
+    elif(week==5):
+        print("Friday");
+    elif(week==6):
+        print("saturday");
+    elif(week==7):
+        print("Sunday");
+elif(n=='t'):
+    tem=int(input("Enter the temperature : "));
+    if(tem<10):
+        print("very Cold");
+    elif(tem>=10 and tem<=20):
+        print("Cold");
+    elif(tem>=21 and tem<=30):
+        print("Normal");
+    elif(tem>=31 and tem<=40):
+        print("Hot");
+    elif(tem>40):
+        print("Very hot");
+elif(n=='r'):
+    a=int(input("Enter the number : "));
+    if(a<=100):
+        print(a*2);
+    elif(a>=101 and a<=200 ):
+        print((100*2)+(a-100)*3);
+    elif(a>=201 and a<=300):
+        print((100*2)+(100*3)+(a-200)*4);
+    elif(a>300):
+        print((100*2)+(100*3)+(100*4)+(a-300)*5)        
+else:
+    print("Enter the valid character ");
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
