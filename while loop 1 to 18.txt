@@ -1,0 +1,312 @@
+=============================================================================================================================
+while loop :
+Here are some **basic practical questions** on the **`while` loop** in C 👇
+
+---
+
+### 🧮 **Question 1: Print Numbers from 1 to 10**
+
+Write a python program using a while loop to print numbers from 1 to 10.
+
+answer : 
+
+n=int(input("Enter the number : "));
+i=1;
+while(i<=n):
+    print(i);
+    i=i+1;
+
+
+### 🔢 **Question 2: Sum of First 10 Natural Numbers**
+
+Write a python program to find the sum of the first 10 natural numbers using a while loop.
+
+answer : 
+
+n=int(input("Enter the number : "));
+sum=0;
+i=1;
+while(i<=n):
+    sum=sum+i;
+    i=i+1;
+print("Sum =",sum);    
+
+
+### 📉 **Question 3: Reverse Counting**
+
+Write a python program to print numbers from 10 down to 1 using a while loop.
+
+answer : 
+
+n=int(input("Enter the number : "));
+while(1<=n):
+    print(n);
+    n=n-1;
+
+
+
+### 💰 **Question 4: Sum of Digits**
+
+Write a python program that takes a number from the user and finds the sum of its digits using a while loop.
+
+answer : 
+
+n=int(input("Enter the number : "));
+sum=0
+while(n>0):
+    digit=n%10;
+    sum=sum+digit;
+    n=n//10;
+print("Total sum = ",sum); 
+
+
+
+### 🧾 **Question 5: Multiplication Table**
+
+Write a python program to print the multiplication table of a given number using a while loop.
+
+answer :   
+
+sum=int(input("Enter the number : "));
+i=1;
+while(i<=10):
+    mul=sum*i;
+    print(mul);
+    i=i+1;
+    
+
+OR
+
+sum=int(input("Enter the number : "));
+i=1;
+while(i<=10):
+    print(sum,"x",i,"=",sum*i);
+    i=i+1;
+    
+
+
+### 🔁 **Question 6: Count Digits in a Number**
+
+Write a count program to count the total number of digits in a number using a while loop.
+
+answer : 
+
+n=int(input("Enter the number : "));
+count=0;
+while(n>0):
+    digit=n%10;
+    n=n//10;
+    count=count+1;
+print("Count = ",count);    
+
+
+
+### 🔄 **Question 7: Check Even Numbers Between 1 and 20**
+
+Write a python program using a while loop to print all even numbers between 1 and 20.
+
+n=int(input("Enter the number : "));
+i=1;
+while(i<=n):
+    if(i%2==0):
+        print(i);
+    i=i+1;    
+
+
+
+### ⚙️ **Question 8: Find Factorial of a Number**
+
+Write a python program using a while loop to find the factorial of a given number.
+
+answer : 
+
+n=int(input("Enter the number : "));
+fac=1;
+i=1;
+while(i<=n):
+    fac=fac*i;
+    i=i+1;
+print(fac);    
+
+
+
+### 💯 **Question 9: Check Palindrome Number**
+
+Write a python program to check whether a given number is a palindrome using a while loop.
+
+answer : 
+
+n=int(input("Enter  the numberr : "));
+original=n;
+rev=0;
+while(n>0):
+    digit=n%10;
+    rev=rev*10+digit;
+    n=n//10;
+if(original==rev):
+    print("It is a palandrom number");
+else:
+    print("It is not a palandrom number");
+    
+
+
+
+### 🔢 **Question 10: Reverse a Number**
+
+Write a python program using a while loop to reverse the digits of a number.
+
+answer :
+
+n=int(input("Enter the number : "));
+rev=0;
+while(n>0):
+    digit=n%10;
+    rev=rev*10+digit;
+    n=n//10;
+print(rev);    
+
+
+
+### ➗ **Question 11: Count Even and Odd Digits**
+
+Write a python program to count how many even and odd digits are present in a number using a while loop.
+
+answer : 
+
+n=int(input("Enter the number : "));
+evencount=0;
+oddcount=0;
+while(n>0):
+    digit=n%10;
+    if(digit%2==0):
+        evencount=evencount+1;
+    else:
+        oddcount=oddcount+1;
+    n=n//10;    
+print("Total even number = ",evencount);
+print("Total odd number = ",oddcount);
+
+
+
+**Question 12: Sum of Even Numbers Between 1 and 50**
+g a while loop to find the sum of all even numbers between 1 and 50.
+
+answer : 
+
+
+n=int(input("Enter the number : "));
+i=1;
+sum=0;
+while(i<=n):
+    if(i%2==0):
+        sum=sum+i;
+    i=i+1;    
+    
+print("Sum of even number : ",sum);    
+
+
+
+### 📈 **Question 13: Print Squares of Numbers 1 to 10**
+
+Write a C program to print the square of each number from 1 to 10 using a while loop.
+
+answer : 
+
+n=int(input("Enter the number : "));
+i=1;
+while(i<=n):
+    s=i*i;
+    i=i+1;
+    print(s);
+
+
+### 🔄 **Question 14: Print Odd Numbers from 1 to N**
+
+Write a python program to print all odd numbers from 1 to a given number N using a while loop.
+
+answer : 
+
+n=int(input("Enter the number : "));
+i=1;
+while(i<n):
+    if(i%2!=0):
+        print(i);
+    i=i+1;    
+
+
+
+### 🔟 **Question 15: Find Power of a Number**
+
+Write a python program using a while loop to calculate the power of a number (base^exponent).
+
+answer : 
+
+n=int(input("Enter the base : "));
+a=int(input("Enter the exponent : "));
+result=1;
+while(a>0):
+    result=result*n;
+    a=a-1;
+print("Answer : ",result); 
+
+
+
+### 🔁 **Question 16: Check Armstrong Number**
+
+Write a python program using a while loop to check whether a number is an Armstrong number or not.
+
+answer : 
+
+n=int(input("Enter the number : "));
+sum=0;
+temp=n;
+while(n>0):
+    digit=n%10;
+    sum=sum+digit*digit*digit;
+    n=n//10;
+if(temp==sum):
+    print("It is a armstrong number ");
+else:
+    print("It is not a armstrong number ");
+
+
+
+### 💡 **Question 17: Display Fibonacci Series** 	
+
+Write a python program using a while loop to print the first N terms of the Fibonacci series.
+
+answer : 
+
+n=int(input("Enter the number : "));
+n1=0;
+n2=1;
+count=0;
+while(count<n):
+    print(n1)
+    n3=n1+n2;
+    n1=n2;
+    n2=n3;
+    count=count+1;
+    
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
