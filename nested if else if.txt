@@ -1,0 +1,199 @@
+---
+
+### ⚙️ **Average Nested If Questions**
+
+1. **Find the greatest among four numbers**
+   Use nested if statements to find the largest number out of four given numbers.
+
+answer : 
+
+print("Choice 1 number for find the greatest number : ")
+n=int(input("Enter the number : "));
+if(n==1):
+    a=int(input("Enter the first number : "));
+    b=int(input("Enter the second number : "));
+    c=int(input("Enter the third number : "));
+    d=int(input("Enter the fouth number : "));
+    if(a>b and a>c and a>d):
+        print("It is greater ",a);
+    elif(b>a and b>c and b>d):
+        print("It is greater ",b);
+    elif(c>a and c>b and c>d):
+        print("It is greator ",c);
+    elif(d>a and d>b and d>c):
+        print("It is greator ",d);
+    
+else:
+    print("Choice the valid number");
+
+
+---
+
+2. **Student Grade Calculator**
+   If marks ≥ 90 → Grade A
+   else if marks ≥ 75 → Grade B
+   else if marks ≥ 50 → Grade C
+   else → Fail
+   *(Use nested if to handle ranges properly.)*
+
+answer :
+
+n=int(input("Enter the marks : "));
+if(n>=50):
+    if(n>=90):
+        print("A");
+    elif(n>=75):
+        print("B");
+    elif(n>=50):
+        print("C");
+else:
+    print("fail");
+
+---
+
+3. **Electricity Bill Calculation**
+   If units ≤ 100 → ₹1 per unit
+   else if units ≤ 200 → ₹1.5 per unit for next 100 units
+   else → ₹2 per unit for remaining units
+   *(Use nested if to calculate total cost.)*
+
+answer : 
+
+unit=int(input("Enter the unit : "));
+if(unit<=100):
+    print(unit*1);
+else:
+    if(unit<=200):
+        print((100*1)+(unit-100)*1.5);
+    else:
+        print((100*1)+(100*1.5)+(unit-200)*2);
+
+---
+
+4. **Employee Bonus Program**
+   If employee’s service ≥ 5 years
+   → check if salary > 50000 → give 10% bonus
+   else → give 5% bonus
+   else → no bonus.
+
+answer : 
+
+n=int(input("Enter employe service : "));
+if(n>=5):
+    a=int(input("Enter the salary : "));
+    if(a>50000):
+        print("10 percent bonus = ",a*0.10);
+    else:
+        print("5 percent bonus = ",a*0.05);
+else:
+    print("No bonue");
+
+
+
+---
+
+5. **Number Classification**
+   Check if a number is even or odd.
+   If even → check if it’s positive or negative.
+   If odd → check if it’s greater than 100 or not.
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n%2==0):
+    print("It is a even number ");
+    if(n>0):
+        print("It is posative");
+    else:
+        print("It is negative");
+elif(n%2!=0):
+    print("It is odd number ");
+    if(n>100):
+        print("Greater");
+    else:
+        print("Smaller");
+else:
+    print("nothing");
+
+
+---
+
+6. **Triangle Type Checker**
+   Input three sides of a triangle:
+
+   * If valid triangle → check
+
+     * If all sides equal → Equilateral
+     * Else if two sides equal → Isosceles
+     * Else → Scalene
+       *(Use nested if to validate and classify.)*
+
+answer : 
+
+a=int(input("Enter the first side : "));
+b=int(input("Enter the second side : "));
+c=int(input("Enter the third side : "));
+if(a+b>c or a+c>b or c+b>a):
+    
+    if(a==b and b==c and a==c):
+        print("It is a equilateral triangle");
+    elif(a==b or b==c or a==c):
+        print("It is a isosceles triangle ");
+    else:
+        print("Scalene triangle");
+else:
+    print("Not a triangle ");
+
+---
+
+7. **Student Admission Eligibility**
+   If student passed 12th → check marks:
+
+   * If marks ≥ 80 → eligible for Science
+   * If marks ≥ 60 → eligible for Commerce
+   * Else → eligible for Arts
+     Else → “Not eligible”.
+
+
+answer : 
+
+a=input("Enter pass : ");
+if(a=='pass'):
+    n=int(input("Enter the marks : "));
+    if(n>=80):
+        print("Eligible for science");
+    elif(n>=60):
+        print("Eligible for commerce");
+    else:
+        print("Eligible for arts");
+else:
+    print("Not eligible");
+
+
+---
+
+8. **ATM Withdrawal System**
+   If entered PIN is correct → check balance →
+
+   * If balance ≥ amount → allow withdrawal
+   * Else → insufficient balance
+     Else → invalid PIN.
+
+
+answer : 
+
+
+n=int(input("Enter the PIN : "));
+if(n==143):
+    balance=5000;
+    amount=int(input("Enter the amount : "));
+    if(balance>=amount):
+        print("Remaning amount : ",balance-amount);
+    else:
+        print("Insufficient balance");
+else:
+    print("Invalis PIN");
+    
+
+
+
