@@ -1,0 +1,299 @@
+Perfect 👍 Here are **more while loop practical questions** — a mix of **beginner to slightly advanced** for strong practice 👇
+
+---
+
+### 🔢 **Question 18: Find Greatest Digit**
+
+Write a python program using a while loop to find the greatest (largest) digit in a given number.
+
+answer : 
+
+n=int(input("Enter the number : "));
+max=0;
+while(n>0):
+    digit=n%10;
+    if(digit>max):
+        max=digit;
+    n=n//10;
+print("maximum number = ",max);  
+
+
+
+### 🧮 **Question 19: Find Smallest Digit**
+
+Write a python program using a while loop to find the smallest digit in a given number.
+
+ 
+answer : 
+
+n=int(input("Enter the number : "));
+min=9;
+while(n>0):
+    digit=n%10;
+    if(digit<min):
+        min=digit;
+    n=n//10;
+print("Minimum number = ",min);    
+
+
+
+### 📊 **Question 20: Count Positive and Negative Numbers**
+
+Write a python program using a while loop to take N numbers from the user and count how many are positive and how many are negative.
+
+answer :
+
+
+a=int(input("How many numbers : "));
+countpositive=0;
+countnegative=0;
+i=1;
+while(i<=a):
+    n=int(input("Enter the number : "));
+    
+    if(n>0):
+        countpositive=countpositive+1;
+    elif(n<0):
+        countnegative=countnegative+1;
+     
+    i=i+1;
+print("Total positive number : ",countpositive);
+print("Total negative number : ",countnegative);
+    
+
+
+### 🔢 **Question 21: Print Even Numbers in Reverse**
+
+Write a python program using a while loop to print even numbers from 20 to 2 in reverse order.
+
+answer : 
+
+n=int(input("Enter the number : "));
+while(n>1):
+    if(n%2==0):
+        print(n);
+    n=n-1;    
+
+
+### 🔄 **Question 22: Check Prime Number**
+
+Write a python program using a while loop to check whether a given number is a prime number.
+
+answer : 
+
+n=int(input("Enter the number : "));
+i=1;
+count=0;
+while(i<=n):
+    if(n%i==0):
+        count=count+1;
+    i=i+1;
+if(count==2):
+    print("It is a prime number");
+else:
+    print("It is not a prime number ");
+
+
+### 📅 **Question 23: Display Days Using Number**
+
+Write a python program that keeps asking for a number (1–7) and prints the day name (1=Monday, 2=Tuesday, etc.) using a while loop until the user enters 0 to stop.
+
+answer : 
+
+print("Use zero for exit the loop");
+n=1;
+while(n!=0):
+    n=int(input("Enter the number : "));
+    if(n==0):
+        break;
+    elif(n==1):
+        print("Monday");
+        
+    elif(n==2):
+        print("Tuesaday");
+        
+    elif(n==3):
+        print("Wednesday");
+        
+    elif(n==4):
+        print("Thursday");
+        
+    elif(n==5):
+        print("Friday");
+        
+    elif(n==6):
+        print("Saturday");
+        
+    elif(n==7):
+        print("Sunday");
+        
+    else:
+        print("Put the valid number ");
+
+
+
+### 💸 **Question 24: ATM Withdrawal Simulation**
+
+Write a python program using a while loop to simulate an ATM — ask for withdrawal amounts until balance becomes less than the withdrawal amount.
+
+answer : 
+
+
+balance=5000;
+while(balance>0):
+    amount=int(input("Enter the amount : "))
+    
+    if(amount>balance):
+        print("Insufficient amount");
+    else:
+        balance=balance-amount;
+        print(balance);
+
+
+### 💯 **Question 25: Find Average of N Numbers**
+
+Write a C program using a while loop to take N numbers from the user and find their average.
+answer : 
+
+n=int(input("Enter how many time it run : "));
+i=1;
+sum=0;
+while(i<=n):
+    a=int(input("Enter the number : "));
+    sum=sum+a;
+    i=i+1;
+average=sum/n;
+print("Average = ",average);
+
+
+
+### 🔁 **Question 26: Print Alphabets A to Z**
+
+Write a python program using a while loop to print all uppercase alphabets from A to Z.
+
+answer : 
+
+n=input("Enter the elphabate : ");
+i='A';
+while(i<=n):
+    print(i,end=" ");
+    i=chr(ord(i)+1);
+
+
+### 🕹️ **Question 27: Menu Driven Calculator**
+
+Write a python program using a while loop that repeatedly asks for a choice:
+
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+
+Perform the selected operation until the user chooses Exit.
+
+answer :
+
+while True:
+ print("Calculator");
+ print("1. addition");
+ print("2. sustaction");
+ print("3. multiplication");
+ print("4. division");
+ print("5. exit");
+ n=int(input("Enter the number : "));
+ if (n==5):
+  break;
+ if(n>=1 and n<=4):
+    a=int(input("Enter the first number : "));
+    b=int(input("Enter the second number : "));
+    if(n==1):
+        print(a+b);
+    elif(n==2):
+        print(a-b);
+    elif(n==3):
+        print(a*b);
+    elif(n==4):
+        print(a/b);
+    else:
+        print("Choice valid number");
+        
+else:
+    print("Print valid number ");
+        
+        
+
+### 📉 **Question 28: Display Digits in Words**
+
+Write a python program using a while loop to display each digit of a number in words.
+
+answer : 
+
+n=int(input("Enter the number : "));
+if(n==0):
+    print("Zero");
+else:
+   while(n>=0):
+    digit=n%10;
+    if(digit==1):
+        print("One");
+    elif(digit==2):
+        print("Two");
+    elif(digit==3):
+        print("Three");
+    elif(digit==4):
+        print("Four");
+    elif(digit==5):
+        print("Five");
+    elif(digit==6):
+        print("Six");
+    elif(digit==7):
+        print("Seven");
+    elif(digit==8):
+        print("Eight");
+    elif(digit==9):
+        print("Nine");
+    n=n//10;
+    
+    
+    
+
+### 🔢 **Question 29: Product of Digits**
+
+Write a python program using a while loop to find the product of digits of a given number.
+
+answer : 
+n=int(input("Enter the number : "));
+result=1;
+while(n>0):
+    digit=n%10;
+    result=result*digit;
+    n=n//10;
+print(result);    
+    
+
+### 🧾 **Question 30: Find Sum of Even and Odd Numbers Separately (1–N)**
+
+Write a python program using a while loop to find the sum of even and odd numbers separately from 1 to N.
+
+answer : 
+
+n=int(input("Enter the number : "));
+i=1;
+sum1=0;
+sum2=0;
+while(i<=n):
+    if(i%2==0):
+        sum1=sum1+i;
+    elif(i%2!=0):
+        sum2=sum2+i;
+    i=i+1;    
+print("The sum of even number : ",sum1);
+print("The sum of odd number : ",sum2);
+
+
+
+
+
+
+
