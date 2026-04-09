@@ -1,0 +1,138 @@
+==================================================
+My questions :
+
+**Question:**
+
+Write a python program that takes a single character as input from the user and performs the following actions based on the entered character:
+
+* If the user enters **'a'**, print numbers from **1 to 10**.
+* If the user enters **'b'**, print numbers from **10 to 1**.
+* If the user enters **'c'**,  print only the **even numbers** from 1 to 10.
+* If the user enters **'d'**,  print only the **odd numbers** from 1 to 10.
+* If the input does not match any of the above characters, display **"Invalid input"**.
+
+answer :
+
+n=input("Enter the character : ");
+if(n=='a'):
+    i=1;
+    while(i<=10):
+        print(i);
+        i=i+1;
+elif(n=='b'):
+    i=10;
+    while(i>=1):
+        print(i);
+        i=i-1;
+elif(n=='c'):
+    i=1;
+    while(i<=10):
+        if(i%2==0):
+            print(i);
+        i=i+1;
+elif(n=='d'):
+    i=1;
+    while(i<=10):
+        if(i%2!=0):
+            print(i);
+        i=i+1;
+else:
+    print("Invalid input");
+
+
+
+
+**Question:**
+
+Write a python program that performs different tasks based on the character input from the user:
+
+* If the user enters **'a'**, print all **even numbers** between **23 and 78**.
+* If the user enters **'b'**, print all **odd numbers** between **56 and 23** in **reverse order**.
+* For **any other character**, ask the user to input **two numbers** (for example, 45 and 89) and then:
+
+  * If the first number is **smaller**, print all **even numbers** between them.
+  * If the first number is **greater**, print all **odd numbers** between them in **reverse order**.
+
+answer : 
+
+
+n=input("enter the character : ");
+if(n=='a'):
+    i=23;
+    while(i<=78):
+        if(i%2==0):
+            print(i);
+        i=i+1;
+elif(n=='b'):
+    i=56;
+    while(i>=23):
+        if(i%2!=0):
+            print(i);
+        i=i-1;
+else:
+    a=int(input("Enter the first number : "));
+    b=int(input("Enter the second number : "));
+    if(a<b):
+        while(a<=b):
+            if(a%2==0):
+                print(a);
+            a=a+1;
+    elif(a>b):
+        while(a>=b):
+            if(a%2!=0):
+                print(a);
+            a=a-1;    
+
+
+
+
+**Question:**
+
+Write a python program that takes a single character as input and performs different operations based on the input character:
+
+* If the user enters **'s'**, ask the user to input **n numbers** and then print the **sum** of those numbers.
+* If the user enters **'a'**, ask the user to input a **number** and check whether it is an **Armstrong number** or not.
+* If the user enters **'p'**, ask the user to input a **number** and check whether it is a **Palindrome** or not.
+* If the user enters **'u'**, ask the user to input a **number** and print the **sum of its digits**.
+* If the input character is anything else, print **"Invalid input"**.
+
+answer : 
+
+n=input("Enter the number : ");
+if(n=='s'):
+    sum=0;
+    a=int(input("Enter the number : "));
+    while(a>0):
+        digit=a%10;
+        sum=sum+digit;
+        a=a//10;
+    print(sum);    
+elif(n=='a'):
+    b=int(input("Enter the number : "));
+    sum=0;
+    temp=b;
+    while(b>0):
+        digit=b%10;
+        sum=sum+digit*digit*digit;
+        b=b//10;
+    if(temp==sum):
+        print("It is a armstrong number");
+    else:
+        print("It is not a armstrong number");
+elif(n=='p'):
+    a=int(input("Enter the number : "));
+    reverse=0;
+    tem=a;
+    while(a>0):
+        digit=a%10;
+        reverse=reverse*10+digit;
+        a=a//10;
+    if(tem==reverse):
+        print("It is a palindrome number ");
+    else:
+        print("It is not palindrome number ");
+else:
+    print("Invalid input");
+
+
+        
